@@ -8,7 +8,7 @@ A comprehensive AI-assisted novel writing and planning Progressive Web App built
 - **Rich Text Editing**: Professional writing environment with advanced formatting
 - **Character Management**: Create detailed character profiles and track relationships
 - **Timeline & Board Views**: Visualize your story with timeline views and kanban-style boards
-- **Offline Support**: Write anywhere, anytime with full offline capabilities
+- **Sync Support**: Seamlessly sync your work across all devices
 - **Privacy-First Design**: Your data stays local and private
 
 ## 🚀 Project Structure
@@ -45,7 +45,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## 🚀 Deployment
 
-This project is configured for deployment on Netlify. The `netlify.toml` file contains the necessary configuration for proper deployment.
+This project is configured for deployment on Vercel. The app is available at `https://inkspireai.vercel.app`.
 
 ## 👀 Want to learn more?
 

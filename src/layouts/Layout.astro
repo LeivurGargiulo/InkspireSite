@@ -8,7 +8,7 @@ export interface Props {
 
 const { 
   title, 
-  description = "InkspireAi - AI-powered novel writing and planning app. Create, organize, and write your stories with intelligent assistance, offline support, and privacy-first design.",
+  description = "InkspireAi - AI-powered novel writing and planning app. Create, organize, and write your stories with intelligent assistance, sync support, and privacy-first design.",
   image = "/og-image.jpg",
   canonical 
 } = Astro.props;
@@ -43,7 +43,7 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
     <meta property="twitter:image" content={new URL(image, Astro.url)} />
     
     <!-- Keywords -->
-    <meta name="keywords" content="novel writing, AI writing assistant, story planning, creative writing, offline writing app, PWA, worldbuilding, character development" />
+    <meta name="keywords" content="novel writing, AI writing assistant, story planning, creative writing, sync writing app, PWA, worldbuilding, character development" />
     
     <!-- Author -->
     <meta name="author" content="InkspireAi" />
@@ -65,7 +65,7 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
         "@type": "WebApplication",
         "name": "InkspireAi",
         "description": "AI-powered novel writing and planning Progressive Web App",
-        "url": "https://inkspire-ai.netlify.app",
+        "url": "https://inkspireai.vercel.app",
         "applicationCategory": "ProductivityApplication",
         "operatingSystem": "Web Browser",
         "offers": {
@@ -78,7 +78,7 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
           "Rich text editing",
           "Character and worldbuilding tools",
           "Timeline and board views",
-          "Offline support",
+          "Sync support",
           "Privacy-first design"
         ]
       }

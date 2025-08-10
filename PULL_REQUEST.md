@@ -2,7 +2,7 @@
 
 ## 📋 Summary
 
-This PR addresses critical website issues and renames the project from StoryWeaver to InkspireAi. The website is now fully functional and ready for Netlify deployment.
+This PR addresses critical website issues and renames the project from StoryWeaver to InkspireAi. The website is now fully functional and ready for Vercel deployment.
 
 ## 🎯 Issues Fixed
 
@@ -10,7 +10,7 @@ This PR addresses critical website issues and renames the project from StoryWeav
 - ✅ **Renamed project from StoryWeaver to InkspireAi** throughout the codebase
 - ✅ **Fixed dependency conflicts** with Tailwind CSS
 - ✅ **Added missing Footer component** that was causing build failures
-- ✅ **Created Netlify configuration** for proper deployment
+- ✅ **Created Vercel configuration** for proper deployment
 - ✅ **Updated all branding and references** to reflect new name
 
 ## 🔧 Technical Changes
@@ -21,13 +21,13 @@ This PR addresses critical website issues and renames the project from StoryWeav
 - Fixed package.json dependencies for compatibility
 
 ### New Files Added
-- `netlify.toml` - Netlify deployment configuration
+- `vercel.json` - Vercel deployment configuration
 - `tailwind.config.mjs` - Tailwind CSS configuration
 - `src/components/Footer.astro` - Missing footer component
 
 ### Files Modified
 - **Package Configuration**: Updated project name and dependencies
-- **Astro Config**: Changed site URL to `https://inkspire-ai.netlify.app`
+- **Astro Config**: Changed site URL to `https://inkspireai.vercel.app`
 - **All Components**: Updated branding from StoryWeaver to InkspireAi
 - **Layout**: Updated meta tags, structured data, and SEO information
 - **README**: Updated project description and features
@@ -41,7 +41,7 @@ This PR addresses critical website issues and renames the project from StoryWeav
 - ✅ Responsive design maintained
 - ✅ SEO optimized with proper meta tags
 
-### Netlify Deployment Ready
+### Vercel Deployment Ready
 - ✅ Static site generation working
 - ✅ Proper redirects configured
 - ✅ Security headers set
@@ -52,7 +52,7 @@ This PR addresses critical website issues and renames the project from StoryWeav
 
 ### Name Changes
 - **Project Name**: `storyweaver-landing` → `inkspire-ai-landing`
-- **Site URL**: `https://storyweaver.app` → `https://inkspire-ai.netlify.app`
+- **Site URL**: `https://storyweaver.app` → `https://inkspireai.vercel.app`
 - **Brand Name**: StoryWeaver → InkspireAi
 - **All UI Text**: Updated throughout components
 
@@ -73,21 +73,20 @@ This PR addresses critical website issues and renames the project from StoryWeav
 
 ## 🚀 Deployment
 
-The website is now ready for deployment to Netlify with the following configuration:
+The website is now ready for deployment to Vercel with the following configuration:
 
-```toml
-[build]
-  publish = "dist"
-  command = "npm run build"
-
-[build.environment]
-  NODE_VERSION = "18"
+```json
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "astro"
+}
 ```
 
 ## 📝 Files Changed
 
 ### Added Files
-- `netlify.toml` - Netlify deployment configuration
+- `vercel.json` - Vercel deployment configuration
 - `tailwind.config.mjs` - Tailwind CSS configuration  
 - `src/components/Footer.astro` - Footer component
 
@@ -110,8 +109,8 @@ The website is now:
 ## 🔗 Next Steps
 
 1. **Merge this PR** to main branch
-2. **Deploy to Netlify** using the provided configuration
-3. **Verify deployment** at `https://inkspire-ai.netlify.app`
+2. **Deploy to Vercel** using the provided configuration
+3. **Verify deployment** at `https://inkspireai.vercel.app`
 4. **Test all functionality** on the live site
 
 ---

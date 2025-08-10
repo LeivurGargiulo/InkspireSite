@@ -2,7 +2,7 @@
 // Hero section component
 ---
 
-<section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+<section class="hero-gradient min-h-[80vh] flex items-center justify-center relative overflow-hidden">
   <!-- Enhanced background decoration -->
   <div class="absolute inset-0 opacity-30">
     <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 rounded-full blur-3xl animate-pulse"></div>
@@ -14,7 +14,7 @@
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <div class="animate-fade-in">
       <!-- Badge -->
-      <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 backdrop-blur-sm rounded-full text-white text-sm font-semibold mb-8 border border-indigo-500/50 shadow-lg">
+      <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 backdrop-blur-sm rounded-full text-white text-sm font-semibold mb-6 border border-indigo-500/50 shadow-lg">
         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
         </svg>
@@ -22,22 +22,22 @@
       </div>
 
       <!-- Main heading -->
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight drop-shadow-2xl">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight drop-shadow-2xl">
         Write Your Novel with
         <span class="block bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent drop-shadow-2xl font-extrabold animate-gradient-x">AI Intelligence</span>
       </h1>
 
       <!-- Subtitle -->
-      <p class="text-xl md:text-2xl text-gray-800 mb-10 max-w-4xl mx-auto leading-relaxed font-medium drop-shadow-lg">
+      <p class="text-xl md:text-2xl text-gray-800 mb-8 max-w-4xl mx-auto leading-relaxed font-medium drop-shadow-lg">
         InkspireAi is a comprehensive AI-assisted novel writing and planning Progressive Web App. 
         Create, organize, and write your stories with intelligent assistance, sync support, and privacy-first design.
       </p>
 
       <!-- Key benefits -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-5xl mx-auto">
         <div class="group bg-gradient-to-br from-indigo-50 to-purple-50 backdrop-blur-sm rounded-xl p-6 text-gray-900 border border-indigo-200 shadow-xl hover:shadow-2xl transition-all duration-500 hover:from-indigo-100 hover:to-purple-100 hover:scale-105 hover:-translate-y-2">
           <div class="w-14 h-14 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
           </div>
@@ -47,7 +47,7 @@
         
         <div class="group bg-gradient-to-br from-pink-50 to-rose-50 backdrop-blur-sm rounded-xl p-6 text-gray-900 border border-pink-200 shadow-xl hover:shadow-2xl transition-all duration-500 hover:from-pink-100 hover:to-rose-100 hover:scale-105 hover:-translate-y-2">
           <div class="w-14 h-14 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
             </svg>
           </div>
@@ -57,7 +57,7 @@
         
         <div class="group bg-gradient-to-br from-cyan-50 to-blue-50 backdrop-blur-sm rounded-xl p-6 text-gray-900 border border-cyan-200 shadow-xl hover:shadow-2xl transition-all duration-500 hover:from-cyan-100 hover:to-blue-100 hover:scale-105 hover:-translate-y-2">
           <div class="w-14 h-14 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
             </svg>
           </div>
@@ -67,15 +67,15 @@
       </div>
 
       <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-        <a href="/app" class="group bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-bold py-4 px-10 rounded-xl transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl text-lg drop-shadow-lg hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-10">
+        <a href="/app" class="group bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-bold py-4 px-10 rounded-xl transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl text-lg drop-shadow-lg hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 relative overflow-hidden" aria-label="Try InkspireAi Free - Opens the application">
           <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-          <svg class="w-6 h-6 inline mr-3 relative z-10" fill="currentColor" viewBox="0 0 20 20">
+          <svg class="w-6 h-6 inline mr-3 relative z-10" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
           </svg>
           <span class="relative z-10">Try InkspireAi Free</span>
         </a>
-        <a href="#features" class="group bg-white text-gray-900 font-bold py-4 px-10 rounded-xl border-2 border-indigo-300 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 hover:border-indigo-400 transition-all duration-500 transform hover:scale-105 text-lg drop-shadow-lg">
+        <a href="#features" class="group bg-white text-gray-900 font-bold py-4 px-10 rounded-xl border-2 border-indigo-300 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 hover:border-indigo-400 transition-all duration-500 transform hover:scale-105 text-lg drop-shadow-lg" aria-label="Learn More - Scrolls to features section">
           <span class="group-hover:text-indigo-700 transition-colors">Learn More</span>
         </a>
       </div>
@@ -83,31 +83,24 @@
       <!-- Trust indicators -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-800 text-base font-medium">
         <div class="group flex items-center bg-gradient-to-r from-green-50 to-emerald-50 backdrop-blur-sm px-4 py-2 rounded-lg border border-green-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-          <svg class="w-5 h-5 mr-2 text-green-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+          <svg class="w-5 h-5 mr-2 text-green-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
           </svg>
           <span class="group-hover:text-green-700 transition-colors">Privacy-First Design</span>
         </div>
         <div class="group flex items-center bg-gradient-to-r from-blue-50 to-cyan-50 backdrop-blur-sm px-4 py-2 rounded-lg border border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-          <svg class="w-5 h-5 mr-2 text-blue-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+          <svg class="w-5 h-5 mr-2 text-blue-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
           </svg>
           <span class="group-hover:text-blue-700 transition-colors">No Account Required</span>
         </div>
         <div class="group flex items-center bg-gradient-to-r from-orange-50 to-amber-50 backdrop-blur-sm px-4 py-2 rounded-lg border border-orange-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-          <svg class="w-5 h-5 mr-2 text-orange-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+          <svg class="w-5 h-5 mr-2 text-orange-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
           </svg>
           <span class="group-hover:text-orange-700 transition-colors">Lightning Fast</span>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <svg class="w-8 h-8 text-gray-700 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-    </svg>
   </div>
 </section>

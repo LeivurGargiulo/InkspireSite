@@ -2,7 +2,7 @@
 // Header component with navigation
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200" x-data="{ mobileMenuOpen: false }">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200" x-data="{ mobileMenuOpen: false }" @click.away="mobileMenuOpen = false">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
@@ -29,8 +29,10 @@
       <div class="md:hidden">
         <button 
           @click="mobileMenuOpen = !mobileMenuOpen"
-          class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:text-indigo-600"
+          class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:text-indigo-600 transition-colors duration-200"
           aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          x-bind:aria-expanded="mobileMenuOpen"
         >
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -49,13 +51,14 @@
       x-transition:leave="transition ease-in duration-150"
       x-transition:leave-start="opacity-100 transform translate-y-0"
       x-transition:leave-end="opacity-0 transform -translate-y-2"
-      class="md:hidden"
+      class="md:hidden absolute top-full left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg"
+      style="display: none;"
     >
-      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-        <a href="#features" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors duration-200 font-medium">Features</a>
-        <a href="#app-preview" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors duration-200 font-medium">Preview</a>
-        <a href="#installation" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors duration-200 font-medium">Install</a>
-        <a href="/app" class="block px-3 py-2 btn-primary text-center">Try InkspireAi</a>
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#features" @click="mobileMenuOpen = false" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-md transition-colors duration-200 font-medium">Features</a>
+        <a href="#app-preview" @click="mobileMenuOpen = false" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-md transition-colors duration-200 font-medium">Preview</a>
+        <a href="#installation" @click="mobileMenuOpen = false" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-md transition-colors duration-200 font-medium">Install</a>
+        <a href="/app" @click="mobileMenuOpen = false" class="block px-3 py-2 btn-primary text-center mx-2 mt-4">Try InkspireAi</a>
       </div>
     </div>
   </div>

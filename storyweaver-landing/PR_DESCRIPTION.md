@@ -1,36 +1,47 @@
-# 🚀 Fix Website Issues and Rename to InkspireAi
+# Fix 404 Page Not Found Error on Netlify Deployment
 
-## Summary
-This PR fixes critical website issues and renames the project from StoryWeaver to InkspireAi. The website is now fully functional and ready for Netlify deployment.
+## 🐛 Bug Fix: Resolve 404 Page Not Found Error
 
-## Issues Fixed
-- ✅ Removed problematic Algiz photo that was causing website issues
-- ✅ Renamed project from StoryWeaver to InkspireAi throughout the codebase
-- ✅ Fixed dependency conflicts with Tailwind CSS
-- ✅ Added missing Footer component that was causing build failures
-- ✅ Created Netlify configuration for proper deployment
-- ✅ Updated all branding and references to reflect new name
+### Problem
+The InkspireAi landing page was returning a 404 'Page not found' error when deployed on Netlify. This was preventing users from accessing the site.
 
-## Technical Changes
-- **Dependencies**: Fixed Tailwind CSS version conflicts
-- **New Files**: Added `netlify.toml`, `tailwind.config.mjs`, and `Footer.astro`
-- **Modified Files**: Updated all components, layouts, and configuration files
-- **Branding**: Changed all references from StoryWeaver to InkspireAi
+### Root Cause
+The issue was caused by an incorrect redirect rule in `netlify.toml`:
 
-## Key Features
-- ✅ Development server runs successfully
-- ✅ Build process completes without errors
-- ✅ All components render correctly
-- ✅ Responsive design maintained
-- ✅ SEO optimized with proper meta tags
-- ✅ Ready for Netlify deployment
+```toml
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
 
-## Files Changed
-- **Added**: 3 new files (netlify.toml, tailwind.config.mjs, Footer.astro)
-- **Modified**: 19 files (package.json, astro.config.mjs, all components, etc.)
+This redirect rule was designed for Single Page Applications (SPAs) with client-side routing, but our Astro site generates static HTML files. The redirect was interfering with Netlify's static file serving.
 
-## Result
-The website is now fully functional, properly branded as InkspireAi, and ready for deployment to Netlify.
+### Solution
+Removed the problematic redirect rule from `netlify.toml`. The site now uses the correct static deployment configuration:
 
-**Branch**: `fix-website-rename-to-inkspireai`
-**Target**: `main`
+- ✅ Build command: `npm run build`
+- ✅ Publish directory: `dist`
+- ✅ Security headers for protection
+- ✅ Cache headers for performance
+
+### Testing
+- ✅ Dependencies installed successfully
+- ✅ Build completes without errors
+- ✅ All assets generated correctly
+- ✅ Local testing confirms site serves with HTTP 200
+- ✅ CSS and JavaScript assets load properly
+
+### Impact
+- 🚀 Fixes the 404 error on Netlify deployment
+- 🚀 Ensures users can access the InkspireAi landing page
+- 🚀 Maintains all existing functionality and styling
+- 🚀 No breaking changes to the site structure
+
+### Files Changed
+- `netlify.toml` - Removed problematic redirect rule
+
+### Deployment
+This fix will resolve the 404 error immediately upon deployment to Netlify.
+
+Closes #7658

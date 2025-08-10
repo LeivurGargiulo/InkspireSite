@@ -2,7 +2,7 @@
 // Hero section component
 ---
 
-<section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+<section class="hero-gradient min-h-[80vh] flex items-center justify-center relative overflow-hidden">
   <!-- Enhanced background decoration -->
   <div class="absolute inset-0 opacity-30">
     <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 rounded-full blur-3xl animate-pulse"></div>
@@ -14,7 +14,7 @@
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <div class="animate-fade-in">
       <!-- Badge -->
-      <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 backdrop-blur-sm rounded-full text-white text-sm font-semibold mb-8 border border-indigo-500/50 shadow-lg">
+      <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 backdrop-blur-sm rounded-full text-white text-sm font-semibold mb-6 border border-indigo-500/50 shadow-lg">
         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
         </svg>
@@ -22,19 +22,19 @@
       </div>
 
       <!-- Main heading -->
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight drop-shadow-2xl">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight drop-shadow-2xl">
         Write Your Novel with
         <span class="block bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent drop-shadow-2xl font-extrabold animate-gradient-x">AI Intelligence</span>
       </h1>
 
       <!-- Subtitle -->
-      <p class="text-xl md:text-2xl text-gray-800 mb-10 max-w-4xl mx-auto leading-relaxed font-medium drop-shadow-lg">
+      <p class="text-xl md:text-2xl text-gray-800 mb-8 max-w-4xl mx-auto leading-relaxed font-medium drop-shadow-lg">
         InkspireAi is a comprehensive AI-assisted novel writing and planning Progressive Web App. 
         Create, organize, and write your stories with intelligent assistance, sync support, and privacy-first design.
       </p>
 
       <!-- Key benefits -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-5xl mx-auto">
         <div class="group bg-gradient-to-br from-indigo-50 to-purple-50 backdrop-blur-sm rounded-xl p-6 text-gray-900 border border-indigo-200 shadow-xl hover:shadow-2xl transition-all duration-500 hover:from-indigo-100 hover:to-purple-100 hover:scale-105 hover:-translate-y-2">
           <div class="w-14 h-14 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
             <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -67,7 +67,7 @@
       </div>
 
       <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-10">
         <a href="/app" class="group bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-bold py-4 px-10 rounded-xl transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl text-lg drop-shadow-lg hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 relative overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
           <svg class="w-6 h-6 inline mr-3 relative z-10" fill="currentColor" viewBox="0 0 20 20">
@@ -102,12 +102,5 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <svg class="w-8 h-8 text-gray-700 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-    </svg>
   </div>
 </section>

@@ -8,7 +8,7 @@ export interface Props {
 
 const { 
   title, 
-  description = "StoryWeaver - AI-powered novel writing and planning app. Create, organize, and write your stories with intelligent assistance, offline support, and privacy-first design.",
+  description = "InkspireAi - AI-powered novel writing and planning app. Create, organize, and write your stories with intelligent assistance, offline support, and privacy-first design.",
   image = "/og-image.jpg",
   canonical 
 } = Astro.props;
@@ -46,7 +46,7 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
     <meta name="keywords" content="novel writing, AI writing assistant, story planning, creative writing, offline writing app, PWA, worldbuilding, character development" />
     
     <!-- Author -->
-    <meta name="author" content="StoryWeaver" />
+    <meta name="author" content="InkspireAi" />
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#667eea" />
@@ -63,9 +63,9 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
       {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "StoryWeaver",
+        "name": "InkspireAi",
         "description": "AI-powered novel writing and planning Progressive Web App",
-        "url": "https://storyweaver.app",
+        "url": "https://inkspire-ai.netlify.app",
         "applicationCategory": "ProductivityApplication",
         "operatingSystem": "Web Browser",
         "offers": {

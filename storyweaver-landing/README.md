@@ -1,10 +1,15 @@
-# Astro Starter Kit: Minimal
+# InkspireAi - AI-Powered Novel Writing & Planning App
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A comprehensive AI-assisted novel writing and planning Progressive Web App built with Astro.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Features
+
+- **AI-Powered Outlines**: Generate intelligent story structures and plot suggestions
+- **Rich Text Editing**: Professional writing environment with advanced formatting
+- **Character Management**: Create detailed character profiles and track relationships
+- **Timeline & Board Views**: Visualize your story with timeline views and kanban-style boards
+- **Offline Support**: Write anywhere, anytime with full offline capabilities
+- **Privacy-First Design**: Your data stays local and private
 
 ## 🚀 Project Structure
 
@@ -37,6 +42,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 🚀 Deployment
+
+This project is configured for deployment on Netlify. The `netlify.toml` file contains the necessary configuration for proper deployment.
 
 ## 👀 Want to learn more?
 

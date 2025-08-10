@@ -1,5 +1,5 @@
 {
-  "name": "storyweaver-landing",
+  "name": "inkspire-ai-landing",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,9 +10,8 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
-    "@tailwindcss/vite": "^4.1.11",
     "alpinejs": "^3.14.9",
     "astro": "^5.12.9",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^3.4.17"
   }
 }

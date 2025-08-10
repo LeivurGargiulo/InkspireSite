@@ -4,31 +4,10 @@
 
 <section id="app-preview" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Section header -->
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-        Experience InkspireAi
-      </h2>
-      <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-        Discover the intuitive interface and powerful features that make InkspireAi the perfect companion for your writing journey.
-      </p>
-    </div>
-
     <!-- Interactive Preview -->
-    <div x-data="{ activeTab: 'editor' }" class="space-y-12">
+    <div x-data="{ activeTab: 'outline' }" class="space-y-12">
       <!-- Tab navigation -->
       <div class="flex flex-wrap justify-center gap-4">
-        <button 
-          @click="activeTab = 'editor'"
-          :class="activeTab === 'editor' ? 'bg-indigo-600 text-white shadow-lg' : 'bg-white text-gray-700 hover:bg-gray-50 border-2 border-gray-200'"
-          class="px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-sm"
-        >
-          <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
-          </svg>
-          Writing Editor
-        </button>
-        
         <button 
           @click="activeTab = 'outline'"
           :class="activeTab === 'outline' ? 'bg-indigo-600 text-white shadow-lg' : 'bg-white text-gray-700 hover:bg-gray-50 border-2 border-gray-200'"
@@ -65,38 +44,7 @@
 
       <!-- Preview content -->
       <div class="relative">
-        <!-- Writing Editor -->
-        <div x-show="activeTab === 'editor'" x-transition class="space-y-8">
-          <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
-            <div class="bg-gray-100 px-6 py-4 border-b border-gray-200">
-              <div class="flex items-center space-x-2">
-                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span class="ml-4 text-sm font-medium text-gray-700">InkspireAi - Chapter 1: The Beginning</span>
-              </div>
-            </div>
-            <div class="p-8">
-              <div class="space-y-4">
-                <div class="h-4 bg-gray-200 rounded w-3/4 animate-pulse"></div>
-                <div class="h-4 bg-gray-200 rounded w-full animate-pulse"></div>
-                <div class="h-4 bg-gray-200 rounded w-5/6 animate-pulse"></div>
-                <div class="h-4 bg-gray-200 rounded w-full animate-pulse"></div>
-                <div class="h-4 bg-gray-200 rounded w-2/3 animate-pulse"></div>
-                <div class="h-4 bg-gray-200 rounded w-full animate-pulse"></div>
-                <div class="h-4 bg-gray-200 rounded w-4/5 animate-pulse"></div>
-              </div>
-              <div class="mt-8 flex items-center justify-between text-sm text-gray-600 font-medium">
-                <span>Word count: 1,247</span>
-                <span>Last saved: 2 minutes ago</span>
-              </div>
-            </div>
-          </div>
-          <div class="text-center">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Distraction-Free Writing Environment</h3>
-            <p class="text-gray-700 text-lg leading-relaxed">Focus on your story with a clean, professional editor that adapts to your writing style and provides real-time feedback.</p>
-          </div>
-        </div>
+
 
         <!-- AI Outlining -->
         <div x-show="activeTab === 'outline'" x-transition class="space-y-8">

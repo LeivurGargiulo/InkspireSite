@@ -90,7 +90,7 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
     <slot />
     
     <!-- Alpine.js -->
-    <script>
+    <script type="module">
       import Alpine from 'alpinejs';
       window.Alpine = Alpine;
       Alpine.start();
